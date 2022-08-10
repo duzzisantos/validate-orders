@@ -28,7 +28,7 @@ const papers = () => {
         })
     } else {
         return new Promise((resolve, reject) => {
-           reject(new Error("Rejected promise")
+           reject(new Error("Rejected promise"))
         })
     }
 }
@@ -44,7 +44,7 @@ const cartons = () => {
         })
     } else {
          return new Promise((resolve, reject) => {
-           reject(new Error("Rejected promise")
+           reject(new Error("Rejected promise"))
         })
     }
 }
@@ -60,7 +60,7 @@ const adhesiveTapes = () => {
         })
     } else {
           return new Promise((resolve, reject) => {
-           reject(new Error("Rejected promise")
+           reject(new Error("Rejected promise"))
         })
     }
 }
