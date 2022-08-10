@@ -75,7 +75,7 @@ const adhesiveTapes = () => {
 }
 
 // A function that validates the availability of these three products for special order
-// If any of them is available, the system notifies you, and the reason for the promise rejection is provided
+// If any of them is unavailable, the system notifies you, and the reason for the promise rejection is provided
 
 const validateSpecialOrder = () => {
     Promise.all([papers(), cartons(), adhesiveTapes()]).then((values) => {
