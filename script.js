@@ -15,7 +15,7 @@ const specialOrder = {
     },
 }
 
-// Make promises for the availability of these three products each
+// Make promises for the availability of each product
 
   // Papers
 const papers = () => {
