@@ -18,7 +18,7 @@ const specialOrder = {
 // Make promises for the availability of these three products each
 
   // Papers
-let papers = () => {
+const papers = () => {
     if(specialOrder.paper.isAvailable){
         return new Promise((resolve, reject) => {
             setTimeout(() => {
@@ -37,7 +37,7 @@ let papers = () => {
 }
 
  //Cartons
-let cartons = () => {
+const cartons = () => {
     if(specialOrder.carton.isAvailable){
         return new Promise((resolve, reject) => {
             setTimeout(() => {
@@ -56,7 +56,7 @@ let cartons = () => {
 }
 
  //Adhesive tapes
-let adhesiveTapes = () => {
+const adhesiveTapes = () => {
      if(specialOrder.adhesiveTape.isAvailable){
         return new Promise((resolve, reject) => {
             setTimeout(() => {
@@ -77,7 +77,7 @@ let adhesiveTapes = () => {
 // A function that validates the availability of these three products for special order
 // If any of them is available, the system notifies you, and the reason for the promise rejection is provided
 
-let validateSpecialOrder = () => {
+const validateSpecialOrder = () => {
     Promise.all([papers(), cartons(), adhesiveTapes()]).then((values) => {
         console.log(values)
     })
