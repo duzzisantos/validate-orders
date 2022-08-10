@@ -28,10 +28,7 @@ const papers = () => {
         })
     } else {
         return new Promise((resolve, reject) => {
-            setTimeout(() => {
-                reject(specialOrder.paper)
-                console.log(`Paper is unavailable at the moment`)
-            }, 2000)
+           reject(new Error("Rejected promise")
         })
     }
 }
@@ -47,10 +44,7 @@ const cartons = () => {
         })
     } else {
          return new Promise((resolve, reject) => {
-            setTimeout(() => {
-                reject(specialOrder.carton)
-                console.log(`Carton is unavailable at the moment`)
-            }, 2000)
+           reject(new Error("Rejected promise")
         })
     }
 }
@@ -66,10 +60,7 @@ const adhesiveTapes = () => {
         })
     } else {
           return new Promise((resolve, reject) => {
-            setTimeout(() => {
-                reject(specialOrder.carton)
-                console.log(`Adhesive tape is unavailable at the moment`)
-            }, 2000)
+           reject(new Error("Rejected promise")
         })
     }
 }
